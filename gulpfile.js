@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 
 var paths = {
     js: [
-        'src/angular-http-creator.js'
+        'angular-http-creator.js'
     ]
 };
 
