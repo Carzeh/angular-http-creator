@@ -13,7 +13,7 @@
 
                 return $q.when($http.get(route, {params: params}))
                     .then(function(success) {
-                        return success;
+                        return success.data;
                     });
 
             },
@@ -21,7 +21,7 @@
 
                 return $q.when($http.post(route, data))
                     .then(function(success) {
-                        return success;
+                        return success.data;
                     });
 
             },
@@ -29,7 +29,7 @@
 
                 return $q.when($http.put(route, data))
                     .then(function(success) {
-                        return success;
+                        return success.data;
                     });
             }
         };
